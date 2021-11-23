@@ -19,7 +19,7 @@
   nav {
     float: left;
     width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 400px; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
   }
@@ -35,7 +35,7 @@
     padding: 20px;
     width: 70%;
     background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 400px; /* only for demonstration, should be removed */
   }
   
   /* Clear floats after the columns */
@@ -62,7 +62,15 @@
   }
 
   #headshot{
-    width: 300px;
+    width: 200px;
     animation-name: example;
     animation-duration: 2s;
+  }
+
+  .darkmode{
+    position: absolute;
+    left: 95px;
+    top: 2%;
+    width: 10px;
+    height: 10px;
   }
