@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Thanatuch's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/light.css">
+
+  <script>
+    var theme = document.getElementsByTagName('link')[0];
+    function toggleTheme() {
+      // Obtains an array of all <link>
+      // elements.
+      // Select your element using indexing.
+
+      // Change the value of href attribute 
+      // to change the css sheet.
+      if (theme.getAttribute('href') == 'css/light.css'|| theme.getAttribute('href') == 'css/sweet.css') {
+        theme.setAttribute('href', 'css/dark.css');
+      } else {
+        theme.setAttribute('href', 'css/light.css');
+      }
+    }
+    function sweetTheme() {
+        if (theme.getAttribute('href') == 'css/light.css' || theme.getAttribute('href') == 'css/dark.css') {
+          theme.setAttribute('href', 'css/sweet.css');
+      } else {
+          theme.setAttribute('href', 'css/light.css');
+      }
+    }
+
+  </script>
+
+</head>
+<body>
+
+
+  <header>
+    <h2>タナタッチ Thanatuch's Portfolio</h2>
+  </header>
+  <img src="img/idea.png" class="dark-mode"  onclick='toggleTheme()'>
+  <img src="img/cake.png" class="sweet-mode"  onclick='sweetTheme()'>
+  <section>
+  <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Classworks</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>How You Like That</h1>
+    <h2>Black Pink</h2>
+    <p>
+        Ha, how you like that?<br/>
+You gon' like that, that that that, that, that that that, that<br/>
+How you like that? (bara bing, bara boom, boom, boom)<br/>
+How you like that, that that that, that, that that that, that<br/>
+Now, look at you, now look at me (uh)<br/>
+Look at you, now look at me (uh)<br/>
+Look at you, now look at me<br/>
+How you like that?<br/>
+Now, look at you, now look at me (uh)<br/>
+Look at you, now look at me (uh)<br/>
+Look at you, now look at me<br/>
+How you like that?<br/>
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p>Contact me: u6315215@au.edu</p>
+</footer>
+
+</body>
+</html>

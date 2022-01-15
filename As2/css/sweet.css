@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    color: red;
+
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgb(160, 69, 92);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 65vh; /* only for demonstration, should be removed */
+    background: rgba(205, 248, 14, 0.856);
+    padding: 20px;
+  }
+
+  nav a {
+    color: white;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+  }
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .dark-mode {
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    width: 40pt;
+    height: 40pt;
+  }
+
+  
+  .sweet-mode {
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    width: 40pt;
+    height: 40pt;
+  }
+
+  
